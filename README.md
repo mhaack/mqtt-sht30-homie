@@ -1,6 +1,6 @@
 # Homie Sensor project with SHT30  
 
-[![Build Status](https://circleci.com/gh/mhaack/mqtt-sht30-homie/tree/master.svg?style=svg)](https://circleci.com/gh/mhaack/mqtt-sht30-homie/tree/master)
+[![Build Status](https://circleci.com/gh/mhaack/mqtt-sht30-homie/tree/master.svg?style=shield)](https://circleci.com/gh/mhaack/mqtt-sht30-homie/tree/master)
 [![GitHub release](https://img.shields.io/github/release/mhaack/mqtt-sht30-homie.svg?style=flat-square)](https://github.com/mhaack/mqtt-sht30-homie/releases)
 
 The mqtt-sht30-homie project is a simple and easy to integrate temperature and humidity sensor setup similar to my other project with [BME280 sensor](https://github.com/mhaack/mqtt-bme280-homie). I use this sensor in a hidden area, therefor it has no display. Sensor data is send via MQTT and processed by my OpenHab setup. The project is built with a cost-effective ESP8266 WiFi chip, Wemos D1 mine and sensor are available for a total price lower $10.
