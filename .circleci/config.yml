@@ -19,6 +19,5 @@ jobs:
       - run:
           name: Build Application
           command: |
-            platformio ci src/mqtt-sht3x-sensor.cpp --project-conf=platformio.ini
+            platformio run
      
-          
