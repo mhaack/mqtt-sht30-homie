@@ -13,7 +13,7 @@ jobs:
           name: install dependencies
           command: |
             python --version
-            pip install -U platformio
+            pip install -q platformio --user
       
       - run:
           name: Build Application
