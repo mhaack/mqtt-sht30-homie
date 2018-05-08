@@ -1,7 +1,12 @@
-dependencies:
-    pre:
-        - sudo pip install -U platformio
+version: 2
 
-test:
-    override:
-        - platformio ci --project-conf=platformio.ini
+jobs:
+  build:
+    steps:
+      - checkout
+       - run:
+          name: Install Platform.io
+          command: pip install -U platformio
+       - run:
+          name: Build Application
+          command: - platformio ci --project-conf=platformio.ini
