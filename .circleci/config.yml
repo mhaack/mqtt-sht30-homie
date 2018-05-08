@@ -1,19 +1,6 @@
 version: 2
 jobs:
   build:
-    steps:
-      - checkout
-       - run:
-          name: Install Platform.io
-          command: pip install -U platformio
-       - run:
-          name: Build Application
-          command: - platformio ci --project-conf=platformio.ini
-
-
-version: 2
-jobs:
-  build:
     docker:
       - image: circleci/python:3.6.1
       
