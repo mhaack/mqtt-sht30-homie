@@ -19,5 +19,6 @@ jobs:
       - run:
           name: Build Application
           command: |
-            platformio run
-     
+            platformio ci --project-conf platformio.ini
+          environment:
+            PLATFORMIO_CI_SRC: src
