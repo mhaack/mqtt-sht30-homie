@@ -9,28 +9,15 @@ jobs:
     steps:
       - checkout
 
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "requirements.txt" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
       - run:
           name: install dependencies
           command: |
-            python -m venv venv
-            . venv/bin/activate
+            python --version
             pip install -r requirements.txt
-
-      - save_cache:
-          paths:
-            - ./venv
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
       
       - run:
           name: Build Application
           command: |
-            . venv/bin/activate
             - platformio ci --project-conf=platformio.ini
      
           
